@@ -1,0 +1,89 @@
+/* Colored bg texts */
+.textColored {
+    color: #353535;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: fit-content;
+    padding: 3px 10px;
+}
+.redbg {
+    background-color: #FFADAF;
+}
+.orangebg {
+    background-color: #FFAE6A;
+}
+.yellowbg {
+    background-color: #FFF96A;
+}
+.greenbg {
+    background-color: #A5FF8E;
+}
+.bluebg {
+    background-color: #8EFFFF;
+}
+.indigobg {
+    background-color: #C1C3FF;
+}
+.violetbg {
+    background-color: #FBADFF;
+}
+
+/* Text styles */
+.greyItalic {
+    color: gray;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+}
+
+/* Custom elements */
+
+h1, h2, h3 {
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    letter-spacing: 1.5px;
+}
+label, p, h1, h2, h3 {
+    color: #f0f0f0;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+p {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    letter-spacing: 1px;
+}
+label {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+progress {
+    background-color: #0D1516;
+    caret-color: black;
+    margin: 2px;
+    width: 100%;
+}
+progress::-webkit-progress-bar {
+    background-color: #0D1516;
+}
+
+progress::-webkit-progress-value {
+    background-color: red;
+}
+button {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #0D1516;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition-duration: .3s;
+}
+button:hover {
+    background-color: #F0F0F0;
+    color: #353535;
+}
+button:active {
+    color: #689ABC;
+    transition: .1s;
+}
