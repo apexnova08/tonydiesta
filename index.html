@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/9a6a9a17e5.js" crossorigin="anonymous"></script>
+
+    
+    
 </head>
 <body>
+    <header>
+        <h2 class="verdana">tonydiesta</h2>
+        <ul>
+            <li><a href="#about"><label class="size20 verdana">about me</label></a></li>
+            <li><a href="#skills"><label class="size20 verdana">skills</label></a></li>
+            <li><a href="#projects"><label class="size20 verdana">projects</label></a></li>
+            <li><a href="#contact"><label class="size20 verdana">contact</label></a></li>
+        </ul>
+    </header>
+
     <div>
         <!--Top-->
         <div class="topPanel">
@@ -20,7 +33,7 @@
                         <li style="float:left; margin-right:10px;"><label class="textColored greenbg"><i class="fas fa-code"></i> PROGRAMMER</label></li>
                         <li style="float:left;"><label class="textColored violetbg"><i class="fas fa-pen-nib"></i> DESIGNER</label></li>
                     </ul>
-                    <a href="Resources/Files/RESUME_DIESTA-ANTONIO-3.pdf" download="file" target="_blank">
+                    <a href="Resources/Files/RESUME_DIESTA-ANTONIO-4.pdf" download="file" target="_blank">
                         <button style="margin-top: 40px;"><i class="fas fa-file-lines"></i> My Resume</button>
                     </a>
                 </div>
@@ -28,15 +41,15 @@
         </div>
 
         <!--About Me-->
-        <div class="panel">
+        <div class="panel" id="about">
             <h1 class="textColored bluebg">about me</h1>
             <div class="wrapper">
-                <p style="font-size:25px;">Hi! My name is Tony, I'm a 24 year old programmer from Cavite City, Cavite. I specialize in <span class="textColored indigobg">ASP.NET</span>, <span class="textColored violetbg">.NET&nbsp;MAUI</span>, and <span class="textColored yellowbg">Python</span>. Scroll down to learn more about my skills and my finished projects.</p>
+                <p class="size25">Hi! My name is Tony, I'm a 24 year old programmer from Cavite City, Cavite. I specialize in <span class="textColored indigobg">ASP.NET</span>, <span class="textColored violetbg">.NET&nbsp;MAUI</span>, and <span class="textColored yellowbg">Python</span>. Scroll down to learn more about my skills and my finished projects.</p>
             </div>
         </div>
 
         <!--Skills-->
-        <div class="panel">
+        <div class="panel" id="skills">
             <h1 class="textColored redbg">skills</h1>
             <div class="wrapper skills">
                 <div class="skills1">
@@ -107,7 +120,7 @@
         </div>
 
         <!--Projects-->
-        <div class="panel">
+        <div class="panel" id="projects">
             <h1 class="textColored violetbg">projects</h1>
             <div class="wrapper projects">
                 <div>
@@ -205,18 +218,18 @@
         </div>
 
         <!--Contact-->
-        <div class="panel">
+        <div class="panel" id="contact">
             <h1 class="textColored greenbg">contact me</h1>
             <div class="wrapper contacts">
-                <p style="font-size:25px;">For any business inquiries, you can reach out to me through my contacts below.</p>
+                <p class="size25">For any business inquiries, you can reach out to me through my contacts below.</p>
                 <div>
-                    <label style="font-size:25px;"><i class="fas fa-envelope"></i> tonydiesta08@gmail.com</label>
+                    <label class="size25"><i class="fas fa-envelope"></i> tonydiesta08@gmail.com</label>
                     <a href="mailto: tonydiesta08@gmail.com" class="projectPage">
                         <button><i class="fas fa-envelope"></i> Email</button>
                     </a>
                 </div>
                 <div>
-                    <label style="font-size:25px;"><i class="fas fa-phone"></i> (+63)926-548-2193</label>
+                    <label class="size25"><i class="fas fa-phone"></i> (+63)926-548-2193</label>
                     <a href="tel: +639265482193" class="projectPage">
                         <button><i class="fas fa-phone"></i> Dial</button>
                     </a>
@@ -226,9 +239,7 @@
     </div>
 
     <footer>
-        <div>
-            <label>&copy; 2023 - tonydiesta</label>
-        </div>
+        <label>&copy; 2023 - tonydiesta</label>
     </footer>
 </body>
 </html>

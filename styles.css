@@ -34,8 +34,14 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px 0;
 }
+.verdana {
+    font-family: Verdana, sans-serif;
+}
+.tahoma {
+    font-family: Tahoma, sans-serif;
+}
 
-/* Custom elements */
+/* Custom texts */
 
 h1, h2, h3 {
     font-weight: 500;
@@ -43,32 +49,27 @@ h1, h2, h3 {
     letter-spacing: 1.5px;
 }
 label, p, h1, h2, h3 {
-    color: #f0f0f0;
+    color: #F0F0F0;
     font-family: 'Trebuchet MS', sans-serif;
     line-height: 1.5;
 }
 p {
     padding: 10px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #F0F0F0;
     letter-spacing: 1px;
 }
 label {
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
-progress {
-    background-color: #0D1516;
-    caret-color: black;
-    margin: 2px;
-    width: 100%;
+.size25 {
+    font-size: 25px;
 }
-progress::-webkit-progress-bar {
-    background-color: #0D1516;
+.size20 {
+    font-size: 20px;
 }
 
-progress::-webkit-progress-value {
-    background-color: red;
-}
+/* Custom button */
 button {
     font-size: 20px;
     font-family: 'Trebuchet MS', sans-serif;

@@ -5,7 +5,24 @@
 }
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0D1516;
     margin: 0;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #F0F0F0;
 }
 
 @media (min-width: 768px) {
@@ -14,34 +31,47 @@ html {
     }
 }
 
-html {
+/* Nav bar */
+header {
     position: relative;
-    min-height: 100%;
+    background-color: #050505;
+    border-bottom: 1px solid #F0F0F0;
 }
-body {
-    background-color: #0D1516;
+header h2 {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+header ul {
+    list-style-type: none;
+    margin: 0 0 0 200px;
+    overflow: hidden;
+}
+header ul li {
+    float: left;
+    padding: 15px;
+}
+header ul li a {
+    text-decoration: none;
+}
+.navbar button {
+    float: inline-end;
+    position: relative;
+    right: 0;
+    margin: 10px;
 }
 
-p, h1, h2 {
-    color: #f0f0f0
-}
-
-.navbar {
-    background-color: #0D1516;
-    color: white;
-}
-
+/* Top panel */
 .topPanel {
     background-color: #0D1516;
     background-image: url(Resources/Images/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: 0;
     height: 100vh;
     width: 100%;
-    left: 0;
 }
 .topInfoContainer {
     position: relative;
@@ -141,5 +171,7 @@ p, h1, h2 {
 
 /* Footer */
 footer {
-    padding-left: 50px;
+    background-color: #050505;
+    border-top: 1px solid #F0F0F0;
+    padding: 10px 50px;
 }
