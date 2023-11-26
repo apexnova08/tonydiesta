@@ -40,13 +40,30 @@
 .tahoma {
     font-family: Tahoma, sans-serif;
 }
+.justify {
+    text-align: justify;
+}
+.p1 {
+    font-size: 18px;
+}
+.p2 {
+    font-size: 16px;
+}
+.nav1 {
+    font-size: 16px;
+}
 
 /* Custom texts */
-
 h1, h2, h3 {
     font-weight: 500;
     margin: 0 0 10px 0;
     letter-spacing: 1.5px;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
 }
 label, p, h1, h2, h3 {
     color: #F0F0F0;
@@ -59,25 +76,20 @@ p {
     letter-spacing: 1px;
 }
 label {
-    margin-bottom: 15px;
     letter-spacing: 1px;
-}
-.size25 {
-    font-size: 25px;
-}
-.size20 {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 /* Custom button */
 button {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #0D1516;
     color: #F0F0F0;
     border: 2px solid #F0F0F0;
     border-radius: 10px;
     padding: 10px 20px;
+    cursor: pointer;
     transition-duration: .3s;
 }
 button:hover {
@@ -87,4 +99,57 @@ button:hover {
 button:active {
     color: #689ABC;
     transition: .1s;
+}
+
+/* Misc. */
+.pointer {
+    cursor: pointer;
+}
+
+/* Screen response */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .p1 {
+        font-size: 30px;
+    }
+    .p2 {
+        font-size: 22px;
+    }
+    .nav1 {
+        font-size: 28px;
+    }
+    button {
+        font-size: 28px;
+    }
+    label {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .p1 {
+        font-size: 25px;
+    }
+    .p2 {
+        font-size: 16px;
+    }
+    .nav1 {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+    label {
+        font-size: 16px;
+    }
 }

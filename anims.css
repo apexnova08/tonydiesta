@@ -1,0 +1,39 @@
+@keyframes navbarexpand {
+    from {height: 55px;}
+    to {height: 230px;}
+}
+.navbarExpand {
+    height: 230px;
+    animation-name: navbarexpand;
+    animation-duration: .5s;
+}
+@keyframes navbarcontract {
+    from {height: 230px;}
+    to {height: 55px;}
+}
+.navbarContract {
+    height: 55px;
+    animation-name: navbarcontract;
+    animation-duration: .5s;
+}
+@media (min-width: 768px)
+{
+    @keyframes navbarexpand {
+        from {height: 75px;}
+        to {height: 320px;}
+    }
+    .navbarExpand {
+        height: 320px;
+        animation-name: navbarexpand;
+        animation-duration: .5s;
+    }
+    @keyframes navbarcontract {
+        from {height: 320px;}
+        to {height: 75px;}
+    }
+    .navbarContract {
+        height: 75px;
+        animation-name: navbarcontract;
+        animation-duration: .5s;
+    }
+}

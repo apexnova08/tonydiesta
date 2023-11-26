@@ -25,42 +25,48 @@ body {
     background: #F0F0F0;
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
 /* Nav bar */
 header {
     position: relative;
     background-color: #050505;
     border-bottom: 1px solid #F0F0F0;
+    height: 55px;
+    overflow: hidden;
 }
 header h2 {
     position: absolute;
-    left: 50px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 20px;
+    top: 10px;
 }
 header ul {
     list-style-type: none;
-    margin: 0 0 0 200px;
+    margin: 70px 0 0 0;
     overflow: hidden;
 }
 header ul li {
-    float: left;
-    padding: 15px;
+    padding: 5px;
 }
 header ul li a {
     text-decoration: none;
 }
-.navbar button {
-    float: inline-end;
-    position: relative;
-    right: 0;
-    margin: 10px;
+header ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #F0F0F0;
+    text-decoration-thickness: 2px;
+}
+header button {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: none;
+    background-color: #050505;
+}
+header button:hover {
+    background-color: #050505;
+    color: #F0F0F0;
+}
+header button:active {
+    color: #F0F0F0;
 }
 
 /* Top panel */
@@ -76,16 +82,20 @@ header ul li a {
 .topInfoContainer {
     position: relative;
     width: fit-content;
+    display: block;
     margin: auto;
+    padding: 0 20px;
     top: 30%;
 }
+
+/* Content panel */
 .panel {
     position: relative;
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    padding: 50px;
+    padding: 50px 20px;
 }
 .panel .wrapper {
     margin: 50px 0 0 0;
@@ -97,6 +107,9 @@ header ul li a {
     padding: 0;
     margin: 0;
     overflow: hidden;
+}
+.skills .skill {
+    padding: 0 10px;
 }
 .skills div div {
     margin-bottom: 20px;
@@ -110,11 +123,6 @@ header ul li a {
     margin: 3px;
     border: none;
 }
-.skills1, .skills2 {
-    width: 50%;
-    float: left;
-    padding: 0 10px;
-}
 
 /* Projects */
 .projects {
@@ -123,22 +131,18 @@ header ul li a {
 .projects div {
     padding: 10px 0;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 .projects div div {
-    float: left;
-    width: 30%;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 5px;
 }
 .projects div div img {
     display: block;
     width: 100%;
     height: 100%;
-}
-.projects div article {
-    float: left;
-    width: 70%;
-    padding-left: 10px;
 }
 .projects div article .projectPage{
     float: right;
@@ -174,4 +178,75 @@ footer {
     background-color: #050505;
     border-top: 1px solid #F0F0F0;
     padding: 10px 50px;
+}
+
+/* Screen response */
+@media (min-width: 768px) {
+    header {
+        height: 75px;
+    }
+    header h2 {
+        left: 50px;
+    }
+    header ul {
+        margin: 70px 0 0 30px;
+    }
+    header button {
+        right: 50px;
+    }
+    .panel {
+        padding: 50px;
+    }
+    .skills .skill {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+    }
+    .projects div div {
+        width: 40%;
+    }
+}
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    header {
+        height: auto;
+    }
+    header h2 {
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    header ul {
+        list-style-type: none;
+        margin: 0 0 0 200px;
+        overflow: hidden;
+    }
+    header ul li {
+        float: left;
+        padding: 15px;
+    }
+    header button {
+        visibility: hidden;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .projects div {
+        margin-bottom: 20px;
+    }
+    .projects div div {
+        float: left;
+        width: 30%;
+        margin: 0;
+    }
+    .projects div article {
+        float: left;
+        width: 70%;
+        padding-left: 10px;
+    }
+    .projects div article .projectPage{
+        float: right;
+    }
 }

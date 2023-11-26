@@ -4,22 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tonydiesta</title>
+    <link rel="icon" type="img/png" href="Resources/Images/icon.png">
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="anims.css" />
+    <script src="triggers.js"></script>
     <script src="https://kit.fontawesome.com/9a6a9a17e5.js" crossorigin="anonymous"></script>
-
-    
-    
 </head>
+
 <body>
-    <header>
-        <h2 class="verdana">tonydiesta</h2>
+    <header id="navbar">
+        <a class="toplogo" href="https://apexnova08.github.io/tonydiesta/"><h2 class="verdana">tonydiesta</h2></a>
         <ul>
-            <li><a href="#about"><label class="size20 verdana">about me</label></a></li>
-            <li><a href="#skills"><label class="size20 verdana">skills</label></a></li>
-            <li><a href="#projects"><label class="size20 verdana">projects</label></a></li>
-            <li><a href="#contact"><label class="size20 verdana">contact</label></a></li>
+            <li><a href="#about"><label class="nav1 verdana pointer">about me</label></a></li>
+            <li><a href="#skills"><label class="nav1 verdana pointer">skills</label></a></li>
+            <li><a href="#projects"><label class="nav1 verdana pointer">projects</label></a></li>
+            <li><a href="#contact"><label class="nav1 verdana pointer">contact</label></a></li>
         </ul>
+        <button onclick="toggleNavBar()"><i class="fas fa-bars"></i></button>
     </header>
 
     <div>
@@ -27,7 +29,7 @@
         <div class="topPanel">
             <div class="topInfoContainer">
                 <div style="height:100%; width:2px; background-color:#F0F0F0; position:absolute; left:0; top:0;"></div>
-                <div style="left:20px; position: relative;">
+                <div>
                     <h1 class="textColored yellowbg">ANTONIO DIESTA, III</h1>
                     <ul style="list-style-type:none; margin:0; padding:0; overflow:hidden;">
                         <li style="float:left; margin-right:10px;"><label class="textColored greenbg"><i class="fas fa-code"></i> PROGRAMMER</label></li>
@@ -44,7 +46,7 @@
         <div class="panel" id="about">
             <h1 class="textColored bluebg">about me</h1>
             <div class="wrapper">
-                <p class="size25">Hi! My name is Tony, I'm a 24 year old programmer from Cavite City, Cavite. I specialize in <span class="textColored indigobg">ASP.NET</span>, <span class="textColored violetbg">.NET&nbsp;MAUI</span>, and <span class="textColored yellowbg">Python</span>. Scroll down to learn more about my skills and my finished projects.</p>
+                <p class="p1">Hi! My name is Tony, I'm a 24 year old programmer from Cavite City, Cavite. I specialize in <span class="textColored indigobg">ASP.NET</span>, <span class="textColored violetbg">.NET&nbsp;MAUI</span>, and <span class="textColored yellowbg">Python</span>. Scroll down to learn more about my skills and my finished projects.</p>
             </div>
         </div>
 
@@ -52,7 +54,7 @@
         <div class="panel" id="skills">
             <h1 class="textColored redbg">skills</h1>
             <div class="wrapper skills">
-                <div class="skills1">
+                <div class="skill">
                     <div>
                         <label class="textColored violetbg">.NET MAUI</label>
                         <div>
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skills2">
+                <div class="skill">
                     <div>
                         <label class="textColored orangebg">HTML &amp; CSS</label>
                         <div>
@@ -120,7 +122,7 @@
         </div>
 
         <!--Projects-->
-        <div class="panel" id="projects">
+        <div class="panel" id="projects" style="margin-bottom: 20px;">
             <h1 class="textColored violetbg">projects</h1>
             <div class="wrapper projects">
                 <div>
@@ -128,12 +130,12 @@
                         <img src="Resources/Images/hh.png" />
                     </div>
                     <article>
-                        <h3>Hanime Haven</h3>
+                        <h2>Hanime Haven</h2>
                         <ul>
                             <li><label class="textColored orangebg">HTML &amp; CSS</label></li>
                             <li><label class="textColored yellowbg">JavaScript</label></li>
                         </ul>
-                        <p>A school project. An anime streaming website that we've made back in 2019 on our second year in Computer Science.</p>
+                        <p class="justify p2">A school project. An anime streaming website that we've made back in 2019, on our second year in Computer Science.</p>
                         <a href="https://github.com/apexnova08/Hanime-Haven" target="_blank" class="projectPage">
                             <button><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
@@ -144,12 +146,12 @@
                         <img src="Resources/Images/gumamela.png" />
                     </div>
                     <article>
-                        <h3>MIS of Barangay 40 Gumamela, Cavite City</h3>
+                        <h2>MIS of Barangay 40 Gumamela, Cavite City</h2>
                         <ul>
                             <li><label class="textColored yellowbg">Python</label></li>
                             <li><label class="textColored bluebg">MySQL/SQLite</label></li>
                         </ul>
-                        <p>Our Capstone project - An MIS for Barangay 40 Gumamela in Cavite City, a windows application made with Python and QML.</p>
+                        <p class="justify p2">Our Capstone project - An MIS for Barangay 40 Gumamela in Cavite City, a windows application made with Python and QML.</p>
                         <a href="https://github.com/apexnova08/mis" target="_blank" class="projectPage">
                             <button><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
@@ -160,12 +162,12 @@
                         <img src="Resources/Images/baybayin.png" />
                     </div>
                     <article>
-                        <h3>Baybayin Mobile Learning Application with OCR</h3>
+                        <h2>Baybayin Mobile Learning Application with OCR</h2>
                         <ul>
                             <li><label class="textColored bluebg">Xamarin.NET</label></li>
                             <li><label class="textColored bluebg">Azure Services</label></li>
                         </ul>
-                        <p>A comissioned Capstone project, a mobile application that teaches the Baybayin writing system through lessons and activities. We used Azure Custom Vision 2 service for the machine learning that is required for the OCR and tracing features of the app.</p>
+                        <p class="justify p2">A comissioned Capstone project, a mobile application that teaches the Baybayin writing system through lessons and activities. We used Azure Custom Vision 2 service for the machine learning that is required for the OCR and tracing features of the app.</p>
                         <a href="https://github.com/apexnova08/Baybayin-App" target="_blank" class="projectPage">
                             <button><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
@@ -176,12 +178,12 @@
                         <img src="Resources/Images/arcana.png" />
                     </div>
                     <article>
-                        <h3>Arcana Inventory System and POS</h3>
+                        <h2>Arcana Inventory System and POS</h2>
                         <ul>
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                             <li><label class="textColored yellowbg">Firebase</label></li>
                         </ul>
-                        <p>An inventory system mobile application with POS for Arcana Apparel, a small apparel store based in Bacoor Cavite.</p>
+                        <p class="justify p2">An inventory system mobile application with POS for Arcana Apparel, a small apparel store based in Bacoor Cavite.</p>
                         <label class="projectPage greyItalic">*Github Page Unavailable atm.</label>
                     </article>
                 </div>
@@ -190,12 +192,12 @@
                         <img src="Resources/Images/quickfry.png" />
                     </div>
                     <article>
-                        <h3>QuickFry Delivery App</h3>
+                        <h2>QuickFry Delivery App</h2>
                         <ul>
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                             <li><label class="textColored yellowbg">Firebase</label></li>
                         </ul>
-                        <p>A mobile delivery application for QuickFry, a family-run dining business in Imus.</p>
+                        <p class="justify p2">A mobile delivery application for QuickFry, a family-run dining business in Imus.</p>
                         <a href="https://github.com/apexnova08/QuickFry" target="_blank" class="projectPage">
                             <button><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
@@ -206,11 +208,11 @@
                         <img src="Resources/Images/tle.png" />
                     </div>
                     <article>
-                        <h3>Namatho TLE</h3>
+                        <h2>Namatho TLE</h2>
                         <ul>
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                         </ul>
-                        <p>Another comissioned Capstone project, a mobile application that teaches everything about the subject Technology and Livelyhood Education (TLE) for Grade-7 to Grade-10 students.</p>
+                        <p class="justify p2">Another comissioned Capstone project, a mobile application that teaches everything about the subject Technology and Livelyhood Education (TLE) for Grade-7 to Grade-10 students.</p>
                         <label class="projectPage greyItalic">*Github Page Unavailable atm.</label>
                     </article>
                 </div>
@@ -221,15 +223,15 @@
         <div class="panel" id="contact">
             <h1 class="textColored greenbg">contact me</h1>
             <div class="wrapper contacts">
-                <p class="size25">For any business inquiries, you can reach out to me through my contacts below.</p>
+                <p class="p1">For any business inquiries, you can reach out to me through my contacts below.</p>
                 <div>
-                    <label class="size25"><i class="fas fa-envelope"></i> tonydiesta08@gmail.com</label>
+                    <label class="p1"><i class="fas fa-envelope"></i> tonydiesta08@gmail.com</label>
                     <a href="mailto: tonydiesta08@gmail.com" class="projectPage">
                         <button><i class="fas fa-envelope"></i> Email</button>
                     </a>
                 </div>
                 <div>
-                    <label class="size25"><i class="fas fa-phone"></i> (+63)926-548-2193</label>
+                    <label class="p1"><i class="fas fa-phone"></i> (+63)926-548-2193</label>
                     <a href="tel: +639265482193" class="projectPage">
                         <button><i class="fas fa-phone"></i> Dial</button>
                     </a>
