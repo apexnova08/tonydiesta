@@ -163,14 +163,25 @@ header button:active {
     width: 100%;
 }
 .contacts div {
-    width: 100%;
+    position: relative;
     overflow: hidden;
+    width: 100%;
     margin: 10px;
 }
+.contacts div label {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .contacts div a {
+    display: block;
     position: relative;
     float: right;
     right: 0;
+}
+.contacts div a button span{
+    display: none;
 }
 
 /* Footer */
@@ -204,6 +215,9 @@ footer {
     }
     .projects div div {
         width: 40%;
+    }
+    .contacts div a button span{
+        display: contents;
     }
 }
 @media (min-width: 1024px) {
