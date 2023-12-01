@@ -86,6 +86,7 @@ header button:active {
     margin: auto;
     padding: 0 20px;
     top: 30%;
+    overflow: hidden;
 }
 
 /* Content panel */

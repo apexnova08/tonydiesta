@@ -1,39 +1,49 @@
-@keyframes navbarexpand {
-    from {height: 55px;}
-    to {height: 230px;}
+@keyframes test {
+    from {background-color: red;}
+    to {background-color: rebeccapurple;}
 }
-.navbarExpand {
-    height: 230px;
-    animation-name: navbarexpand;
-    animation-duration: .5s;
+.testt {
+    background-color: aqua;
+    animation-name: test;
+    animation-duration: 3s;
 }
-@keyframes navbarcontract {
-    from {height: 230px;}
-    to {height: 55px;}
+@keyframes ttl1 {
+    0% { transform: scaleY(0); }
+    25% { transform: scaleY(1); }
 }
-.navbarContract {
-    height: 55px;
-    animation-name: navbarcontract;
-    animation-duration: .5s;
+.title1 {
+    animation-name: ttl1;
+    animation-duration: 2s;
 }
-@media (min-width: 768px)
-{
-    @keyframes navbarexpand {
-        from {height: 75px;}
-        to {height: 320px;}
-    }
-    .navbarExpand {
-        height: 320px;
-        animation-name: navbarexpand;
-        animation-duration: .5s;
-    }
-    @keyframes navbarcontract {
-        from {height: 320px;}
-        to {height: 75px;}
-    }
-    .navbarContract {
-        height: 75px;
-        animation-name: navbarcontract;
-        animation-duration: .5s;
-    }
+@keyframes ttl2 {
+    0% { left: -150%; }
+    10% { left: -150%; }
+    75% { left: 0%; }
+}
+.title2 {
+    position: relative;
+    left: 0;
+    animation-name: ttl2;
+    animation-duration: 2s;
+}
+@keyframes ttl3 {
+    0% { left: -150%; }
+    20% { left: -150%; }
+    85% { left: 0%; }
+}
+.title3 {
+    position: relative;
+    left: 0;
+    animation-name: ttl3;
+    animation-duration: 2s;
+}
+@keyframes ttl4 {
+    0% { left: -150%; }
+    30% { left: -150%; }
+}
+.title4 {
+    position: relative;
+    left: 0;
+    animation-name: ttl4;
+    animation-duration: 2s;
 }
