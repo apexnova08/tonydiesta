@@ -1,4 +1,10 @@
 var navbarExpanded = false;
+function OnLoad()
+{
+    const date = new Date();
+    console.log(date);
+    document.getElementById("age").textContent = date;
+}
 function toggleNavBar() 
 {
     if (navbarExpanded)
