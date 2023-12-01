@@ -1,9 +1,9 @@
 var navbarExpanded = false;
+
 function OnLoad()
 {
-    const date = new Date();
-    console.log(date);
-    document.getElementById("age").textContent = date;
+    const bdate = new Date("1999/12/26");
+    document.getElementById("age").textContent = Math.floor((new Date() - bdate) / (1000 * 60 * 60 * 24 * 365.25));
 }
 function toggleNavBar() 
 {
