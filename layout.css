@@ -92,14 +92,21 @@ header button:active {
 /* Content panel */
 .panel {
     position: relative;
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
     padding: 50px 20px;
 }
+.panel .ptitle {
+    max-width: 750px;
+    margin: auto;
+    border-left: 2px solid #F0F0F0;
+    overflow: hidden;
+}
+.panel .ptitle h1{
+    margin: 0 10px;
+}
 .panel .wrapper {
-    margin: 50px 0 0 0;
+    max-width: 750px;
+    margin: 50px auto 0 auto;
 }
 
 /* Skills */
@@ -109,7 +116,7 @@ header button:active {
     margin: 0;
     overflow: hidden;
 }
-.skills .skill {
+.skills .skillset {
     padding: 0 10px;
 }
 .skills div div {
@@ -209,7 +216,7 @@ footer {
     .panel {
         padding: 50px;
     }
-    .skills .skill {
+    .skills .skillset {
         width: 50%;
         float: left;
         padding: 0 10px;

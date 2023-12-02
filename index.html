@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="anims.css" />
     <link rel="stylesheet" href="animsnav.css" />
-    <script src="triggers.js"></script>
+    <script defer src="triggers.js"></script>
+    <script defer src="newFile.js"></script>
     <script src="https://kit.fontawesome.com/9a6a9a17e5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,74 +46,78 @@
 
         <!--About Me-->
         <div class="panel" id="about">
-            <h1 class="textColored bluebg">about me</h1>
-            <div class="wrapper">
+            <div class="ptitle animate">
+                <h1 class="textColored bluebg animate">about me</h1>
+            </div>
+            <div class="wrapper animate">
                 <p class="p1">Hi! My name is Tony, I'm a <span id="age">age</span> year old programmer from Cavite City, Cavite. I specialize in <span class="textColored indigobg">ASP.NET</span>, <span class="textColored violetbg">.NET&nbsp;MAUI</span>, and <span class="textColored yellowbg">Python</span>. Scroll down to learn more about my skills and my finished projects.</p>
             </div>
         </div>
 
         <!--Skills-->
         <div class="panel" id="skills">
-            <h1 class="textColored redbg">skills</h1>
+            <div class="ptitle animate">
+                <h1 class="textColored redbg animate">skills</h1>
+            </div>
             <div class="wrapper skills">
-                <div class="skill">
-                    <div>
+                <div class="skillset">
+                    <div id="skill" class="animate">
                         <label class="textColored violetbg">.NET MAUI</label>
                         <div>
                             <div class="violetbg" style="width:90%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored yellowbg">Python</label>
                         <div>
                             <div class="yellowbg" style="width:80%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored bluebg">C#</label>
                         <div>
                             <div class="bluebg" style="width:80%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored indigobg">ASP.NET</label>
                         <div>
                             <div class="indigobg" style="width:70%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored yellowbg">JavaScript</label>
                         <div>
                             <div class="yellowbg" style="width:70%;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div>
+                <div class="skillset">
+                    <div id="skill" class="animate">
                         <label class="textColored orangebg">HTML &amp; CSS</label>
                         <div>
                             <div class="orangebg" style="width:70%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored greenbg">C/C++</label>
                         <div>
                             <div class="greenbg" style="width:65%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored yellowbg">Firebase</label>
                         <div>
                             <div class="yellowbg" style="width:65%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored bluebg">MySQL/SQLite</label>
                         <div>
                             <div class="bluebg" style="width:60%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="skill" class="animate">
                         <label class="textColored violetbg">MSSQL</label>
                         <div>
                             <div class="violetbg" style="width:50%;"></div>
@@ -124,97 +129,99 @@
 
         <!--Projects-->
         <div class="panel" id="projects" style="margin-bottom: 20px;">
-            <h1 class="textColored violetbg">projects</h1>
+            <div class="ptitle animate">
+                <h1 class="textColored violetbg animate">projects</h1>
+            </div>
             <div class="wrapper projects">
                 <div>
-                    <div class="bluebg">
-                        <img src="Resources/Images/hh.png" />
+                    <div id="projimgcntnr" class="bluebg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/hh.png" alt="Hanime Haven"/>
                     </div>
                     <article>
-                        <h2>Hanime Haven</h2>
-                        <ul>
+                        <h2 class="animate">Hanime Haven</h2>
+                        <ul class="animate">
                             <li><label class="textColored orangebg">HTML &amp; CSS</label></li>
                             <li><label class="textColored yellowbg">JavaScript</label></li>
                         </ul>
-                        <p class="justify p2">A school project. An anime streaming website that we've made back in 2019, on our second year in Computer Science.</p>
+                        <p class="justify p2 animate">A school project. An anime streaming website that we've made back in 2019, on our second year in Computer Science.</p>
                         <a href="https://github.com/apexnova08/Hanime-Haven" target="_blank" class="projectPage">
-                            <button><i class="fa-brands fa-github"></i> GitHub Page</button>
+                            <button class="animate"><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
                     </article>
                 </div>
                 <div>
-                    <div class="redbg">
-                        <img src="Resources/Images/gumamela.png" />
+                    <div id="projimgcntnr" class="redbg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/gumamela.png" alt="Gumamela"/>
                     </div>
                     <article>
-                        <h2>MIS of Barangay 40 Gumamela, Cavite City</h2>
-                        <ul>
+                        <h2 class="animate">MIS of Barangay 40 Gumamela, Cavite City</h2>
+                        <ul class="animate">
                             <li><label class="textColored yellowbg">Python</label></li>
                             <li><label class="textColored bluebg">MySQL/SQLite</label></li>
                         </ul>
-                        <p class="justify p2">Our Capstone project - An MIS for Barangay 40 Gumamela in Cavite City, a windows application made with Python and QML.</p>
+                        <p class="justify p2 animate">Our Capstone project - An MIS for Barangay 40 Gumamela in Cavite City, a windows application made with Python and QML.</p>
                         <a href="https://github.com/apexnova08/mis" target="_blank" class="projectPage">
-                            <button><i class="fa-brands fa-github"></i> GitHub Page</button>
+                            <button class="animate"><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
                     </article>
                 </div>
                 <div>
-                    <div class="yellowbg">
-                        <img src="Resources/Images/baybayin.png" />
+                    <div id="projimgcntnr" class="yellowbg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/baybayin.png" alt="Baybayin App"/>
                     </div>
                     <article>
-                        <h2>Baybayin Mobile Learning Application with OCR</h2>
-                        <ul>
+                        <h2 class="animate">Baybayin Mobile Learning Application with OCR</h2>
+                        <ul class="animate">
                             <li><label class="textColored bluebg">Xamarin.NET</label></li>
                             <li><label class="textColored bluebg">Azure Services</label></li>
                         </ul>
-                        <p class="justify p2">A comissioned Capstone project, a mobile application that teaches the Baybayin writing system through lessons and activities. We used Azure Custom Vision 2 service for the machine learning that is required for the OCR and tracing features of the app.</p>
+                        <p class="justify p2 animate">A comissioned Capstone project, a mobile application that teaches the Baybayin writing system through lessons and activities. We used Azure Custom Vision 2 service for the machine learning that is required for the OCR and tracing features of the app.</p>
                         <a href="https://github.com/apexnova08/Baybayin-App" target="_blank" class="projectPage">
-                            <button><i class="fa-brands fa-github"></i> GitHub Page</button>
+                            <button class="animate"><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
                     </article>
                 </div>
                 <div>
-                    <div class="indigobg">
-                        <img src="Resources/Images/arcana.png" />
+                    <div id="projimgcntnr" class="indigobg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/arcana.png" alt="Arcana Apparel"/>
                     </div>
                     <article>
-                        <h2>Arcana Inventory System and POS</h2>
-                        <ul>
+                        <h2 class="animate">Arcana Inventory System and POS</h2>
+                        <ul class="animate">
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                             <li><label class="textColored yellowbg">Firebase</label></li>
                         </ul>
-                        <p class="justify p2">An inventory system mobile application with POS for Arcana Apparel, a small apparel store based in Bacoor Cavite.</p>
-                        <label class="projectPage greyItalic">*Github Page Unavailable atm.</label>
+                        <p class="justify p2 animate">An inventory system mobile application with POS for Arcana Apparel, a small apparel store based in Bacoor Cavite.</p>
+                        <label class="projectPage greyItalic animate">*Github Page Unavailable atm.</label>
                     </article>
                 </div>
                 <div>
-                    <div class="redbg">
-                        <img src="Resources/Images/quickfry.png" />
+                    <div id="projimgcntnr" class="redbg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/quickfry.png" alt="QuickFry"/>
                     </div>
                     <article>
-                        <h2>QuickFry Delivery App</h2>
-                        <ul>
+                        <h2 class="animate">QuickFry Delivery App</h2>
+                        <ul class="animate">
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                             <li><label class="textColored yellowbg">Firebase</label></li>
                         </ul>
-                        <p class="justify p2">A mobile delivery application for QuickFry, a family-run dining business in Imus.</p>
+                        <p class="justify p2 animate">A mobile delivery application for QuickFry, a family-run dining business in Imus.</p>
                         <a href="https://github.com/apexnova08/QuickFry" target="_blank" class="projectPage">
-                            <button><i class="fa-brands fa-github"></i> GitHub Page</button>
+                            <button class="animate"><i class="fa-brands fa-github"></i> GitHub Page</button>
                         </a>
                     </article>
                 </div>
                 <div>
-                    <div class="greenbg">
-                        <img src="Resources/Images/tle.png" />
+                    <div id="projimgcntnr" class="greenbg animate">
+                        <img id="pimg" class="animate" src="Resources/Images/tle.png" alt="Na Mátho TLE"/>
                     </div>
                     <article>
-                        <h2>Namatho TLE</h2>
-                        <ul>
+                        <h2 class="animate">Na Mátho TLE</h2>
+                        <ul class="animate">
                             <li><label class="textColored violetbg">.NET MAUI</label></li>
                         </ul>
-                        <p class="justify p2">Another comissioned Capstone project, a mobile application that teaches everything about the subject Technology and Livelyhood Education (TLE) for Grade-7 to Grade-10 students.</p>
-                        <label class="projectPage greyItalic">*Github Page Unavailable atm.</label>
+                        <p class="justify p2 animate">Another comissioned Capstone project, a mobile application that teaches everything about the subject Technology and Livelyhood Education (TLE) for Grade-7 to Grade-10 students.</p>
+                        <label class="projectPage greyItalic animate">*Github Page Unavailable atm.</label>
                     </article>
                 </div>
             </div>
@@ -222,16 +229,18 @@
 
         <!--Contact-->
         <div class="panel" id="contact">
-            <h1 class="textColored greenbg">contact me</h1>
+            <div class="ptitle animate">
+                <h1 class="textColored greenbg animate">contact</h1>
+            </div>
             <div class="wrapper contacts">
-                <p class="p1">For any business inquiries, you can reach out to me through my contacts below.</p>
-                <div>
+                <p class="p1 animate">For any business inquiries, you can reach out to me through my contacts below.</p>
+                <div class="animate">
                     <label class="p1"><i class="fas fa-envelope"></i> tonydiesta08@gmail.com</label>
                     <a href="mailto: tonydiesta08@gmail.com" class="projectPage">
                         <button><i class="fas fa-envelope"></i><span> Email</span></button>
                     </a>
                 </div>
-                <div>
+                <div class="animate">
                     <label class="p1"><i class="fas fa-phone"></i> (+63)926-548-2193</label>
                     <a href="tel: +639265482193" class="projectPage">
                         <button><i class="fas fa-phone"></i> <span> Dial</span></button>

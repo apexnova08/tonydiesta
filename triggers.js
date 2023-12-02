@@ -20,3 +20,30 @@ function toggleNavBar()
         document.getElementById("navbar").classList.add("navbarExpand");
     }
 }
+
+const observer = new IntersectionObserver((entries) => {
+    // Loop over the entries
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            if (entry.target.id == 'skill') {
+                entry.target.classList.add('appear');
+            }
+            else if (entry.target.id == 'projimgcntnr') {
+                entry.target.classList.add('slide');
+            }
+            else if (entry.target.id == 'pimg') {
+                entry.target.classList.add('slidedelay');
+            }
+            else if (entry.target.classList.contains('ptitle')) {
+                entry.target.classList.add('ptitle1');
+            }
+            else if (entry.target.classList.contains('textColored')) {
+                entry.target.classList.add('ptitle2');
+            }
+            else {
+                entry.target.classList.add('appear');
+            }
+        }
+    });
+});
+document.querySelectorAll('.animate').forEach((el) => observer.observe(el));

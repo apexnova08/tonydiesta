@@ -7,8 +7,10 @@
     animation-name: test;
     animation-duration: 3s;
 }
+
+/* Top panel */
 @keyframes ttl1 {
-    0% { transform: scaleY(0); }
+    0% { transform: scaleY(0); opacity: 1; }
     25% { transform: scaleY(1); }
 }
 .title1 {
@@ -46,4 +48,86 @@
     left: 0;
     animation-name: ttl4;
     animation-duration: 2s;
+}
+
+/* epic */
+.animate {
+    opacity: 0;
+}
+
+/* Panel title */
+@keyframes pttl1 {
+    0% { transform: scaleY(0); opacity: 1; }
+    35% { transform: scaleY(1); }
+}
+.ptitle1 {
+    opacity: 1;
+    animation-name: pttl1;
+    animation-duration: 1s;
+}
+@keyframes pttl2 {
+    0% { left: -100%; opacity: 1; }
+}
+.ptitle2 {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation-name: pttl2;
+    animation-duration: 1s;
+}
+
+/* Custom */
+@keyframes apprzoom {
+    0% {
+        left: -30%;
+        transform: scale(.9, .9);
+        opacity: 0;
+    }
+    30% {
+        left: -30%;
+        transform: scale(.9, .9);
+        opacity: 0;
+    }
+    100% { opacity: 1; }
+}
+.appearzoom {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation-name: apprzoom;
+    animation-duration: 1.5s;
+}
+
+@keyframes appr {
+    0% { top: 100px; opacity: 0; }
+    100% { opacity: 1; }
+}
+.appear {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation-name: appr;
+    animation-duration: 1s;
+}
+
+@keyframes slid {
+    0% { left: -100%; opacity: 1; }
+}
+.slide {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation-name: slid;
+    animation-duration: 1s;
+}
+@keyframes sliddley {
+    0% { left: -100%; opacity: 1; }
+    30% { left: -100%; opacity: 1; }
+}
+.slidedelay {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation-name: sliddley;
+    animation-duration: 1.5s;
 }
