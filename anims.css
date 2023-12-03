@@ -131,3 +131,16 @@
     animation-name: sliddley;
     animation-duration: 1.5s;
 }
+
+/* Nav Scroll */
+@keyframes navscrl {
+    0% { background-color: #708D73; }
+    10% { background-color: #654E90; }
+    30% { background-color: #80812D; }
+    60% { background-color: #8F3833; }
+    100% { background-color: #0D1516; }
+}
+.navscroll {
+    animation-name: navscrl;
+    animation-duration: 1.5s;
+}

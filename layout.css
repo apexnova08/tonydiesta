@@ -9,6 +9,7 @@ html {
 }
 body {
     background-color: #0D1516;
+    /*background-image: linear-gradient(to bottom right, #0D1516, #050505);*/
     margin: 0;
 }
 ::-webkit-scrollbar
@@ -71,7 +72,6 @@ header button:active {
 
 /* Top panel */
 .topPanel {
-    background-color: #0D1516;
     background-image: url(Resources/Images/bg.png);
     background-position: center;
     background-repeat: no-repeat;

@@ -20,13 +20,22 @@ function toggleNavBar()
         document.getElementById("navbar").classList.remove("navbarContract");
         document.getElementById("navbar").classList.add("navbarExpand");
     }
-}
+}/*
+function NavClick(panel)
+{
+    document.getElementById(panel).classList.add("navscroll");
+}*/
 
 const observer = new IntersectionObserver((entries) => {
-    // Loop over the entries
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            if (entry.target.id == 'skill') {
+            if (entry.target.id == 'navbar') {/*
+                document.getElementById('about').classList.remove("navscroll");
+                document.getElementById('skills').classList.remove("navscroll");
+                document.getElementById('projects').classList.remove("navscroll");
+                document.getElementById('contact').classList.remove("navscroll");*/
+            }
+            else if (entry.target.id == 'skill') {
                 entry.target.classList.add('appear');
             }
             else if (entry.target.id == 'projimgcntnr') {
@@ -48,3 +57,4 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 document.querySelectorAll('.animate').forEach((el) => observer.observe(el));
+observer.observe(document.querySelector('#navbar'));
