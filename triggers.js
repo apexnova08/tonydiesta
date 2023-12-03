@@ -4,6 +4,7 @@ function OnLoad()
 {
     const bdate = new Date("1999/12/26");
     document.getElementById("age").textContent = Math.floor((new Date() - bdate) / (1000 * 60 * 60 * 24 * 365.25));
+    document.getElementById("year").textContent = new Date().getFullYear();
 }
 function toggleNavBar() 
 {
